@@ -1,5 +1,5 @@
 # Abaqus-ODB-Reader
-Extracting the simulations data from Abaqus ODB files
+Extracting simulations data from Abaqus ODB files
 
 This project consists of one module contains the functions and some examples showing how it can be used to extract data from ODB files.
 
