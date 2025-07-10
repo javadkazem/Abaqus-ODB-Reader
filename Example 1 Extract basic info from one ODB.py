@@ -7,14 +7,14 @@
 
 import numpy as np
 import sys
-sys.path.append('d://_CL_Python//')
+sys.path.append('d://_CL_Python//') # add the directory to the path
 from CL_Abaqus_ODB_Reader import *
 CL_ODBR_Say_Hello()
 
 #---------------------------------------------------------- BEGIN
 print('='*10 + '> BEGIN <' + '='*10 + '\n')
 #---------------------------------------------------------- Options
-ODBDir     = 'D:\Rolling\Case-2-Two Rollers\DOE-Simulations\\0'     # The directory contains ODB file
+ODBDir     = 'D:\Rolling'                                # The directory contains ODB file
 ODBFName   = 'Jobnew.odb'                                # Name of the ODB file
 #---------------------------------------------------------- open ODB file
 ODBFName = os.path.join(ODBDir, ODBFName)
