@@ -7,7 +7,7 @@
 
 import numpy as np
 import sys
-sys.path.append('d://_CL_Python//')
+sys.path.append('d://_CL_Python//') # adding directory to the path
 from CL_Abaqus_ODB_Reader import *
 CL_ODBR_Say_Hello()
 
@@ -16,14 +16,14 @@ CL_ODBR_Say_Hello()
 print('='*10 + '> BEGIN <' + '='*10 + '\n')
 #---------------------------------------------------------- Options
 ExtDir     = 'D:\Rolling\Case-2-Two Rollers\DOE-Results'           # The directort where the extracted data will be saved
-ODBDir     = 'D:\Rolling\Case-2-Two Rollers\DOE-Simulations\\0'     # The directory contains ODB file
+ODBDir     = 'D:\Rolling\Case-2-Two Rollers\DOE-Simulations'       # The directory contains ODB file
 print(ODBDir)
-ODBFName   = 'Jobnew.odb'                                # Name of the ODB file
-InsName1   = 'PART-SPECIMEN-1'
-InsName2   = 'PART-ROLLER-VERTICAL-1'
-InsName3   = 'PART-ROLLER-HORIZONTAL-1'
-StepName   = 'Step-Rolling'
-Frame      = -1                                       # frame number (-1 means the last frame)
+ODBFName   = 'Jobnew.odb'                                          # Name of the ODB file
+InsName1   = 'PART-SPECIMEN-1'                                     # instance name 1
+InsName2   = 'PART-ROLLER-VERTICAL-1'                              # instance name 2
+InsName3   = 'PART-ROLLER-HORIZONTAL-1'                            # instance name 3
+StepName   = 'Step-Rolling'                                        # step name
+Frame      = -1                                                    # frame number (-1 means the last frame)
 #---------------------------------------------------------- open ODB file
 ODBFName = os.path.join(ODBDir, ODBFName)
 print('-'*80 + ' Reading ODB ...')
